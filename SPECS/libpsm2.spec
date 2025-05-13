@@ -52,7 +52,7 @@
 #
 Summary: Intel PSM Libraries
 Name: libpsm2
-Version: 11.2.230
+Version: 12.0.1
 Release: 1%{?dist}
 License: BSD or GPLv2
 URL: https://github.com/cornelisnetworks/opa-psm2/
@@ -142,6 +142,10 @@ rm -f %{buildroot}%{_libdir}/*.a
 %endif
 
 %changelog
+* Wed Oct 30 2024 Kamal Heib <kheib@redhat.com> - 12.0.1-1
+- Rebase to upstream release PSM2_12.0.1
+- Resolves: RHEL-51872
+
 * Wed Feb 01 2023 Kamal Heib <kheib@redhat.com> - 11.2.230-1
 - Rebase to upstream release PSM2_11.2.230
 
